@@ -32,7 +32,33 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Responsive column layout using CSS Grid */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Default single column layout */
+
+  /* Media query for larger screens */
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two-column layout */
+  }
+
+  /* Media query for even larger screens */
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    /* Three-column layout */
+  }
+}
+
+/* Example styles for grid items */
+.column {
+  padding: 10px;
+  border: 1px solid #ccc;
 }
