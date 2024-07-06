@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import bannerImg from '../assets/restauranfood.jpg';
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
                     <h2>Little Lemon</h2>
                     <h3>Chicago</h3>
                     <p>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <BrowserRouter to="/booking"><button aria-label='On Click'>Reserve Table</button></BrowserRouter>
+                    <Link to="/booking"><button aria-label='On Click'>Reserve Table</button></Link>
                 </div>
 
                 {/*banner image */}
