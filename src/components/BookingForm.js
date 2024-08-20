@@ -32,7 +32,7 @@ const BookingForm = (props) => {
                             <select id="book-time" value={times} onChange={(e) => setTimes(e.target.value)}>
                                 <option value="">Select a time</option>
                                 {
-                                    props.availableTimes.availableTimes.map(availableTimes => { return <option key={availableTimes}>{availableTimes}</option> })
+                                    props.availableTimes.availableTimes.map(availableTime => <option key={availableTime}>{availableTime}</option>)
                                 }
                             </select>
                         </div>
@@ -51,7 +51,7 @@ const BookingForm = (props) => {
                                 <option>Anniversary</option>
                             </select>
                         </div>
-                        {/* ocation field */}
+                        {/* submit button */}
                         <div className='btnReceive'>
                             <input aria-label='On Click' type='submit' value={"Make your reservation"} />
                         </div>
